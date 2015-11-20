@@ -1,0 +1,61 @@
+FUNCTION: getTopK 1
+Result: c
+FUNCTION: getPostings a
+Ordered by doc IDs: 1
+Ordered by TF: 1
+FUNCTION: getPostings b
+Ordered by doc IDs: 1, 2
+Ordered by TF: 2, 1
+FUNCTION: termAtATimeQueryAnd a, b
+3 documents are found
+2 comparisions are made
+0.0 seconds are used
+2 comparisons are made with optimization (optional bonus part)
+Result: 1
+FUNCTION: termAtATimeQueryOr a, b
+3 documents are found
+3 comparisions are made
+0.0 seconds are used
+3 comparisons are made with optimization (optional bonus part)
+Result: 1, 2
+FUNCTION: docAtATimeQueryAnd a, b
+3 documents are found
+0 comparisions are made
+0.0 seconds are used
+Result: 1
+FUNCTION: docAtATimeQueryOr a, b
+3 documents are found
+7 comparisions are made
+0.0 seconds are used
+Result: 1, 2
+FUNCTION: getPostings c
+Ordered by doc IDs: 1, 2, 3
+Ordered by TF: 3, 2, 1
+FUNCTION: getPostings d
+Ordered by doc IDs: 2, 3, 5
+Ordered by TF: 2, 3, 5
+FUNCTION: getPostings e
+Ordered by doc IDs: 3, 5, 6
+Ordered by TF: 3, 5, 6
+FUNCTION: termAtATimeQueryAnd c, d, e
+9 documents are found
+15 comparisions are made
+0.0 seconds are used
+15 comparisons are made with optimization (optional bonus part)
+Result: 3
+FUNCTION: termAtATimeQueryOr c, d, e
+9 documents are found
+21 comparisions are made
+0.0 seconds are used
+21 comparisons are made with optimization (optional bonus part)
+Result: 1, 2, 3, 5, 6
+FUNCTION: docAtATimeQueryAnd c, d, e
+9 documents are found
+5 comparisions are made
+0.0 seconds are used
+Result: 
+FUNCTION: docAtATimeQueryOr c, d, e
+9 documents are found
+27 comparisions are made
+0.0 seconds are used
+Result: 1, 2, 3, 5, 6
